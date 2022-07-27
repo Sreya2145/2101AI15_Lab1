@@ -23,6 +23,9 @@ int main()
         case '-':
             printf("Subtraction of %f and %f = %f\n", a, b, a - b);
             break;
+          case '*':
+            printf("Multiplication of %f and %f = %f\n", a, b, a * b);
+            break;
           
         
             
