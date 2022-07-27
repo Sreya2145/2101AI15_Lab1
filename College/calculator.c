@@ -7,7 +7,7 @@ int main()
     char c;
     float a, b;
     while (1) {
-        printf("Enter (+, -,*,/,^=) operation you want to perform\nIf want to exit press X: ");
+        printf("Enter (+, -,*,/) operation you want to perform\nIf want to exit press X: ");
         scanf(" %c", &c);
         // to exit
         if (c == 'X')
@@ -25,6 +25,9 @@ int main()
             break;
           case '*':
             printf("Multiplication of %f and %f = %f\n", a, b, a * b);
+            break;
+          case '/':
+            printf("Division of %f and %f = %f\n", a, b, a / b);
             break;
           
         
