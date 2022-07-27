@@ -56,7 +56,6 @@ void merge(int arr[], int p, int q, int r) {
   int n2 = r - q;
 
   int A[n1], B[n2];
-
   for (int i = 0; i < n1; i++)
     A[i] = arr[p + i];
   for (int j = 0; j < n2; j++)
@@ -127,7 +126,6 @@ void quickSort(int array[], int l, int h) {
     }
 }
 
-
 int main()
 {
     printf("Enter the size of array\n");
@@ -168,7 +166,7 @@ int main()
         quickSort(a, 0, n - 1);
         Printarray(a,n);
     }
-    
+    return 0;
     
 
 }
