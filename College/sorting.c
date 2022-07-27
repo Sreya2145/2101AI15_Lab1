@@ -23,6 +23,19 @@ void bubbleSort(int arr[], int n)
             if (arr[j] > arr[j + 1])
                 swap(&arr[j], &arr[j + 1]);
 }
+void selectionSort(int arr[], int size)
+{
+    int i, j;
+    for (i = 0 ;  i < size;i++)
+    {
+        for (j = i ; j < size; j++)
+        {
+            if (arr[i] > arr[j])
+                swap(&arr[i], &arr[j]);
+        }
+    }
+}
+
 int main()
 {
     printf("Enter the size of array\n");
@@ -47,5 +60,10 @@ int main()
         bubbleSort(a, n);
         Printarray(a, n);
     }
+    else if(choice==2){
+        selectionSort(a,n);
+        Printarray(a,n);
+    }
+    
 
 }
