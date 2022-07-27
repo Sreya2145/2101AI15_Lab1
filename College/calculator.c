@@ -20,6 +20,11 @@ int main()
         case '+':
             printf("Addition of %f and %f = %f\n", a, b, a + b);
             break;
+        case '-':
+            printf("Subtraction of %f and %f = %f\n", a, b, a - b);
+            break;
+          
+        
             
             default:
             printf("Error! please write a valid operator\n");
