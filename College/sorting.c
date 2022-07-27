@@ -101,6 +101,31 @@ void mergeSort(int arr[], int l, int r) {
     merge(arr, l, m, r);
   }
 }
+int partition(int array[], int l, int h) {
+  
+    int pivot = array[h];
+    int i = (l - 1);
+    for (int j = l; j < h; j++) {
+    if (array[j] <= pivot) {
+        i++;
+        swap(&array[i], &array[j]);
+        }
+    }
+    swap(&array[i + 1], &array[h]);
+    return (i + 1);
+}
+
+void quickSort(int array[], int l, int h) {
+  if (l < h) {
+    
+    
+    int pi = partition(array, l, h);
+    
+    quickSort(array, l, pi - 1);
+    
+    quickSort(array, pi + 1, h);
+    }
+}
 
 
 int main()
@@ -137,6 +162,10 @@ int main()
     }
     else if(choice==4){
         mergeSort(a,n);
+        Printarray(a,n);
+    }
+    else if(choice==5){
+        quickSort(a, 0, n - 1);
         Printarray(a,n);
     }
     
