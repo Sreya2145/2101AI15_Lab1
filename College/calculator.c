@@ -30,8 +30,6 @@ int main()
             printf("Division of %f and %f = %f\n", a, b, a / b);
             break;
           
-        
-            
             default:
             printf("Error! please write a valid operator\n");
         }
